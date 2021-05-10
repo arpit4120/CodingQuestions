@@ -1,0 +1,28 @@
+//2-sum divisible by 3
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+    ll t;
+    FAST;
+    cin>>t;
+    while(t--)
+    {
+    	ll s0,s1,s2;
+    	cin>>s0>>s1>>s2;
+    	ll t=s0;
+    	ll l;
+    	l=min(s1,s2);
+    	s1=s1-l;
+    	s2=s2-l;
+    	t+=l;
+    	t+=(s1/3);
+    	t+=(s2/3);
+    	cout<<t<<endl;
+    	
+    	
+    }
+    return 0;
+}
