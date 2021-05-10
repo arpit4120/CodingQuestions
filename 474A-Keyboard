@@ -1,0 +1,23 @@
+//codefrces.com
+//474A-keyboard
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	char c;
+	cin>>c;
+	string s="qwertyuiopasdfghjkl;zxcvbnm,./",s1;
+	cin>>s1;
+	
+	for(int i=0;i<s1.size();i++)
+	{
+		int index=s.find(s1[i]);
+		if(c=='R')
+			cout<<s[index-1];
+		else
+			cout<<s[index+1];
+	}
+	return 0;
+}
