@@ -1,0 +1,19 @@
+//ceil and A-B problem
+//codechef.com
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int a,b;
+	cin>>a>>b;
+	int s=a-b;
+	if(s%10==0)
+	    s++;
+	if(s%10==9)
+	    s--;
+	else
+	    s++;
+	cout<<s;
+	return 0;
+}
