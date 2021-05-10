@@ -1,0 +1,79 @@
+//point of contact
+//codechef.com
+#include<bits/stdc++.h>
+#define ints long long
+#define endl ("\n")
+#define loop for(int i=0;i<n;i++)
+using namespace std;
+
+
+
+int main()
+{
+        ios_base::sync_with_stdio(0); 
+        cin.tie(0);
+        ints t; cin>>t;
+        while(t--)
+        {
+            
+            ints n,k,x,y;
+            cin>>n>>k>>x>>y;
+            
+            ints baad=k%4; 
+            ints a=x,b=y;
+            
+            if(a>b)
+            {
+                switch(baad)
+                {
+                    case 1:
+                    cout<<n<<" "<<n-a+b;
+                    break;
+                    
+                    case 0:
+                    cout<<x-y<<" "<<0;
+                    break;
+                    
+                    case 3:
+                    cout<<0<<" "<<a-b;
+                    break;
+                    
+                    case 2:
+                    cout<<n-a+b<<" "<<n;
+                    break;
+                }
+                
+                
+            }   
+            if(a==b){ cout<<n<<" "<<n;
+                
+            }
+            
+            
+            if(a<b)
+            {
+                switch(baad)
+                {
+                    case 2:
+                    cout<<n<<" "<<a+n-b;
+                    break;
+                    
+                    case 3:
+                    cout<<b-a<<" "<<0;
+                    break;
+                    
+                    case 0:
+                    cout<<0<<" "<<b-a;
+                    break;
+                    
+                    case 1:
+                    cout<<a+n-b<<" "<<n;
+                    break;
+                }
+                
+            }
+            
+            cout<<endl;
+        }
+    return 0;
+}
