@@ -1,0 +1,49 @@
+//transform the expression
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+    ll t;
+    FAST;
+    cin>>t;
+    while(t--)
+    {
+    	string s;
+    	stack<char> st;
+    	cin>>s;
+    	for(int i=0;i<s.length();i++)
+    	{
+    		if(s[i]>='a' and s[i]<='z')
+    		{
+    			cout<<s[i];
+    		}
+    		else if(s[i]==')')
+    		{
+    			while(st.top()!='(')
+    			{
+    				cout<<st.top();
+    				st.pop();
+    			}
+    			st.pop();
+    		}
+    		else
+    		{
+    			st.push(s[i]);
+    		}
+    	}
+    	while(!st.empty())
+    	{
+    		if(st.top()!='('){
+    		cout<<st.top();
+    		st.pop();
+    		}
+    		else
+    			st.pop();
+    	}
+    	cout<<endl;
+    
+    }
+    return 0;
+}
