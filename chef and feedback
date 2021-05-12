@@ -1,0 +1,22 @@
+//chef and feedback
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+    ll t;
+    FAST;
+    cin>>t;
+    while(t--)
+    {
+    	string s;
+    	cin>>s;
+    	if(s.find("101")<s.length()||s.find("010")<s.length())
+   cout<<"Good\n";
+   else cout<<"Bad\n";
+   
+    	
+    }
+    return 0;
+}
