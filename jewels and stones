@@ -1,0 +1,26 @@
+//jewels and stones
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+    ll t;
+    FAST;
+    cin>>t;
+    while(t--)
+    {
+    	string s,j;
+    	cin>>j>>s;
+    	int c=0;
+    	for(int i=0;i<s.length();i++)
+    	{
+    		if(j.find(s[i])!=string::npos)
+    		{
+    			c++;
+    		}
+    	}
+    	cout<<c<<endl;;
+    }
+    return 0;
+}
