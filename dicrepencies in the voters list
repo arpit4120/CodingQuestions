@@ -1,0 +1,45 @@
+//dicrepencies in the voters list
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+	FAST;
+	int n1,n2,n3;
+	cin>>n1>>n2>>n3;
+	int a[n1],b[n2],c[n3];
+	map<int,int>m;
+	for(int i=0;i<n1;i++)
+	{
+		cin>>a[i];
+		
+			m[a[i]]++;
+	}
+	for(int i=0;i<n2;i++)
+	{
+		cin>>b[i];
+		
+			m[b[i]]++;
+	}
+	for(int i=0;i<n3;i++)
+	{
+		cin>>c[i];
+	
+			m[c[i]]++;
+	}
+	int p=0;
+	for(auto it:m)
+	{
+		if(it.second>1)
+			p++;
+	}
+	cout<<p<<endl;
+	for(auto it:m)
+	{
+		if(it.second>1)
+			cout<<it.first<<endl;
+	}
+	
+	
+}
