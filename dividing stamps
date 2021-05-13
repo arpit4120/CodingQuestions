@@ -1,0 +1,23 @@
+//dividing stamps
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+	int n;
+	cin>>n;
+	int sum=0;
+	int a;
+	for(int i=0;i<n;i++)
+	{
+		cin>>a;
+		sum+=a;
+	}
+	int m=(n*(n+1))/2;
+	if(sum==m)
+		cout<<"YES"<<endl;
+	else
+		cout<<"NO"<<endl;
+    return 0;
+}
