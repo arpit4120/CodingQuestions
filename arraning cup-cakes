@@ -1,0 +1,30 @@
+//arraning cup-cakes
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+    ll t;
+    FAST;
+    cin>>t;
+    while(t--)
+    {
+    	int n;
+    	cin>>n;
+    	int min=INT_MAX;
+    	for(int i=1;i*i<=n;i++)
+    	{
+    		if(n%i==0)
+    		{
+    			int p=n/i;
+    			p=abs(p-i);
+    			if(p<min)
+    				min=p;
+    		}
+    	}
+    	cout<<min<<endl;
+    	
+    }
+    return 0;
+}
