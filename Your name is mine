@@ -1,0 +1,58 @@
+//Your name is mine
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+    ll t;
+    FAST;
+    cin>>t;
+    while(t--)
+    {
+    	string s,a;
+    	cin>>s>>a;
+    	int i=0,j=0;
+    	if(s.length()>a.length())
+    	{
+    		bool p=false;
+    		for(int i=0;i<s.length();i++)
+    		{
+    			if(a[j]==s[i])
+    				j++;
+    			if(j==a.length())
+    			{
+    				p=true;
+    				cout<<"YES"<<endl;
+    				break;
+    			}
+    			
+    		}
+    		if(p==false)
+    			cout<<"NO"<<endl;
+    		
+    	}
+    	else
+    	{
+    			bool p=false;
+    		for(int i=0;i<a.length();i++)
+    		{
+    			if(a[i]==s[j])
+    				j++;
+    			if(j==s.length())
+    			{
+    				p=true;
+    				cout<<"YES"<<endl;
+    				break;
+    			}
+    			
+    		}
+    		if(p==false)
+    			cout<<"NO"<<endl;
+    		
+    		
+    	}
+    	
+    }
+    return 0;
+}
