@@ -1,0 +1,27 @@
+//Counting the pretty numbers
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+    ll t;
+    FAST;
+    cin>>t;
+    while(t--)
+    {
+    	ll a,b;
+    	cin>>a>>b;
+    	int c=0;
+    	for(int i=a;i<=b;i++)
+    	{
+    		if(i%10==2||i%10==3||i%10==9)
+    			c++;
+    		
+    	}
+    	cout<<c<<endl;
+    	
+    	
+    }
+    return 0;
+}
