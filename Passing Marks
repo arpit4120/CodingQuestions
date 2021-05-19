@@ -1,0 +1,21 @@
+//  Passing Marks  
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+    ll t;
+    FAST;
+    cin>>t;
+    while(t--)
+    {
+    	int am,bm,cm,tm,a,b,c;
+    	cin>>am>>bm>>cm>>tm>>a>>b>>c;
+    	if(a>=am and b>=bm and c>=cm and a+b+c>=tm)
+    		cout<<"YES"<<endl;
+    	else
+    		cout<<"NO"<<endl;
+    }
+    return 0;
+}
