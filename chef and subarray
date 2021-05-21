@@ -1,0 +1,36 @@
+//chef and subarray
+//codechef.com
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);
+int32_t main() {
+    ll n;
+    FAST;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+    	cin>>a[i];
+    }
+    ll l=0;
+    ll m=0;
+    ll p=1;
+    for(int i=0;i<n;i++)
+    {
+    	p*=a[i];
+    	if(p!=0)
+    	{
+    		l++;
+    		m=max(l,m);
+    	}
+    	else
+    	{
+    		p=1;
+    		m=max(l,m);
+    		l=0;
+    	}
+    }
+    cout<<m<<endl;
+    return 0;
+}
