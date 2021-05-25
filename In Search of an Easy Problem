@@ -1,0 +1,23 @@
+//In Search of an Easy Problem
+//codeforces.com
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	bool l=true;
+	int a;
+	for(int i=0;i<n;i++)
+	{
+		cin>>a;
+		if(a==1)
+			l=false;
+	}
+	if(l)
+		cout<<"easy"<<endl;
+	else
+		cout<<"hard"<<endl;
+	return 0;
+}
