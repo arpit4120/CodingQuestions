@@ -1,0 +1,17 @@
+//ultra fast mathimatics
+//codeforces.com
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	string z,x;
+	cin>>z>>x;
+	for(int i=0;i<z.length();i++)
+	{
+		if(z[i]==x[i])
+			cout<<0;
+		else
+			cout<<1;
+	}
+}
